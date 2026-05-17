@@ -4,7 +4,7 @@
 
 **Type a keyword. Get a list of Chrome extensions worth buying — with their owners' emails — and send each one a lowball offer in your name. Automatically.**
 
-[Install](#install) · [How it works](#how-it-works) · [Real example](#what-you-actually-get) · [FAQ](#faq)
+[Install](#install) · [How it works](#how-it-works) · [Real screenshots](#the-real-flow-from-start-to-finish) · [FAQ](#faq)
 
 </div>
 
@@ -38,23 +38,39 @@ You get a sheet full of qualified acquisition leads and an inbox primed for repl
 
 ---
 
-## What you actually get
+## The real flow, from start to finish
 
-![Real prospects from running on "productivity"](assets/prospects.png)
+Every screenshot below is from an actual run on the keyword `productivity`. No mockups.
 
-This is the actual output from running the skill on `productivity` — a niche the size of a small ocean. Five qualifying extensions, every single one had a real email, total anchor offer value: **$86,000**, total pipeline cost: **20 cents**.
+### 1. The source — Chrome Web Store
 
-Notice the last row — Toggl Track. 400,000 users but their email is on the `toggl.com` domain, which is a real company. The skill **auto-detects** company emails and quietly skips them. You don't waste an email on someone who'll never sell.
+The skill scans the real Chrome Web Store and pulls every free extension matching your niche.
 
----
+![Chrome Web Store productivity search](assets/store-search.png)
 
-## What lands in their inbox
+### 2. The data — pulled from each extension's listing
 
-![Sample acquisition email](assets/email.png)
+For every result the skill grabs the user count, rating, category, developer name, and the developer email. Here's `MakeTime` — 10,000 users, 4.3 stars, contact info publicly listed.
 
-The email is **personalized**, mentions their extension by name, makes the offer specific, and is **legally compliant** (CAN-SPAM — physical address in the footer, working opt-out). The skill refuses to send if your address isn't filled in.
+![MakeTime extension detail](assets/store-detail.png)
 
-You can preview every single email before any of them go out — pass `--dry-run` and the skill will draft everything to Gmail without sending.
+### 3. The run — one command, ten seconds
+
+![Terminal output](assets/terminal.png)
+
+That's the actual stdout from running the skill. Two Apify scrapers run in parallel, results get merged by extension ID, scored, and filtered. Toggl shows up but gets auto-skipped because the email is on a known big-company domain (`toggl.com`). 
+
+### 4. The output — a fresh Google Sheet, per niche
+
+The skill creates a new sheet named `Chrome Prospects · <niche> · <today>`, drops every qualifying prospect in with their email, offer range, and a status column you can use to track replies.
+
+![Google Sheet with prospects](assets/gsheet.png)
+
+### 5. The outreach — personalized, sent through your own Gmail
+
+For each qualifying prospect, the skill drafts a personalized email and fires it via Gmail. The offer range is filled in automatically based on user count. The footer carries your studio name, mailing address, and a working `Reply STOP` opt-out — so the email is **CAN-SPAM compliant** out of the box.
+
+![Gmail compose with the acquisition email](assets/gmail.png)
 
 ---
 
