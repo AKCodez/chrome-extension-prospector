@@ -1,0 +1,9 @@
+{
+  "sender_name": "Your Name",
+  "sender_email": "you@yourdomain.com",
+  "reply_to": "you@yourdomain.com",
+  "company": "Your Studio Name",
+  "address": "123 Main St, City, ST 12345 USA",
+  "default_threshold": 10000,
+  "default_limit": 100
+}

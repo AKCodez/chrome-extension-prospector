@@ -1,0 +1,14 @@
+{
+  "name": "chrome-extension-prospector",
+  "owner": {
+    "name": "AKCodez",
+    "url": "https://github.com/akcodez"
+  },
+  "plugins": [
+    {
+      "name": "chrome-extension-prospector",
+      "source": ".",
+      "description": "Find free Chrome Web Store extensions in a niche, pull developer emails, compute lowballed acquisition offers, write to Google Sheets, and auto-send Gmail outreach."
+    }
+  ]
+}

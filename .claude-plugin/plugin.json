@@ -1,0 +1,21 @@
+{
+  "name": "chrome-extension-prospector",
+  "version": "1.0.0",
+  "description": "Find free Chrome Web Store extensions in a niche, pull developer emails, compute lowballed acquisition offers, write to Google Sheets, and auto-send Gmail outreach.",
+  "author": {
+    "name": "AKCodez",
+    "url": "https://github.com/akcodez"
+  },
+  "homepage": "https://github.com/akcodez/chrome-extension-prospector",
+  "repository": "https://github.com/akcodez/chrome-extension-prospector",
+  "license": "MIT",
+  "keywords": [
+    "chrome-extension",
+    "acquisition",
+    "outreach",
+    "apify",
+    "prospecting",
+    "cold-email",
+    "lead-generation"
+  ]
+}
