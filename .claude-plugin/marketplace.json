@@ -2,13 +2,21 @@
   "name": "chrome-extension-prospector",
   "owner": {
     "name": "AKCodez",
-    "url": "https://github.com/akcodez"
+    "email": "akcodez@users.noreply.github.com"
   },
   "plugins": [
     {
       "name": "chrome-extension-prospector",
-      "source": ".",
-      "description": "Find free Chrome Web Store extensions in a niche, pull developer emails, compute lowballed acquisition offers, write to Google Sheets, and auto-send Gmail outreach."
+      "source": "./plugin",
+      "description": "Find free Chrome Web Store extensions in a niche, pull developer emails, compute lowballed acquisition offers, write to Google Sheets, and auto-send Gmail outreach.",
+      "version": "1.0.0",
+      "author": {
+        "name": "AKCodez"
+      },
+      "homepage": "https://github.com/akcodez/chrome-extension-prospector",
+      "license": "MIT",
+      "category": "lead-generation",
+      "tags": ["chrome-extension", "acquisition", "outreach", "apify", "prospecting", "cold-email"]
     }
   ]
 }
